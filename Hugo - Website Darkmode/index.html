@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html";>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+<body>
+
+  <section>
+    <header>
+      <a href="#"><img src="images/logo.svg" class="logo"></a>
+      <p class="text_logo">café daisy</p>
+      <ul class="navigation">
+        <li><a href="#">Domů</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Co je nového</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><span class="themeSwitch"></span></li>
+      </ul>
+    </header>
+  <div class="content">
+    <div class="textBox">
+      <h2>To není jenom drink<br>To je <span>hugo</span></h2>
+      <p>Do sklenky vymačkáme šťávu z limetky. Přidáme mátu, kterou jsme rozmačkali v hmoždíři a bezový sirup. Promícháme a vlijeme sekt a sodu.
+Doplníme drceným ledem a ozdobíme limetkou.<br>ňami~ňami
+        </p>
+      <a href="#">přijď vyzkoušet</a>
+    </div>
+    <div class="imgBox">
+      <img src="images/img.svg">
+    </div>
+  </div>
+
+</section>
+
+<script>
+  let themeSwitch = document.querySelector('.themeSwitch');
+  let section = document.querySelector('section');
+
+  themeSwitch.onclick = function(){
+    themeSwitch.classList.toggle('active');
+    section.classList.toggle('dark');
+  
+  }
+</script>
+</body>
+</html>
